@@ -20,7 +20,7 @@ public class QuickMaths {
         System.out.println("The integer that is closest to the number to " + userNumber + " Is: " + Math.rint(userNumber));
         // Casts number to int
         int userInt = (int)(userNumber);
-        System.out.println("Your number as a character is... " + (char) (userInt)); // Cats the number to a character
+        System.out.println("Your number as a character is... " + (char) (userInt)); // Casts the number to a character
         // Add 1 to that number and print the next character
         System.out.println("Your number as a character plus 1 is... " + (char) (userInt + 1));  // Casts the number to a character and adds 1
         System.out.println("Your original decimal number as a integer is..." + userInt);
