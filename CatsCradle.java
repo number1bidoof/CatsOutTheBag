@@ -35,6 +35,14 @@ public class CatsCradle {
             System.out.println("Your character is neither a Letter or a Digit!!!!");
         }
         System.out.println("The numeric value of your character is... " + (int)(usersDog));
-
+		// Bonus question time :)
+		System.out.println("Enter a substring to search in" + usersCat)
+		int usersLizard = scanner.nextInt();
+		String usersSnake = usersCat.substring(usersLizard);
+		if (usersSnake == -1){
+			System.out.println("Sorry gang its not here, try later twin")
+		} else {
+			System.out.println(usersSnake)
+		}
     }
 }
