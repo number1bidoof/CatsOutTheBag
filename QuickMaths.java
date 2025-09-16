@@ -11,16 +11,18 @@ public class QuickMaths {
         input.close();
 
         // Used Math.ceil as it rounds up to the greatest integer to the number
-        System.out.printf("The smallest integer greater than or equal to " + userNumber + " Is: " + Math.ceil(userNumber));
+        System.out.println("The smallest integer greater than or equal to " + userNumber + " Is: " + Math.ceil(userNumber));
         // Used Math.floor as it rounds down to the lowest integer to the number
-        System.out.printf("\nThe smallest integer greater than or equal to " + userNumber + " Is: " + Math.floor(userNumber));
+        System.out.println("The smallest integer greater than or equal to " + userNumber + " Is: " + Math.floor(userNumber));
         // Used Math.rint as it rounds to the closest but ties when it is a even double (ex. 11.5)
-        System.out.printf("\nThe integer that is closest to the number with ties going to even to " + userNumber + " Is: " + Math.rint(userNumber));
+        System.out.println("The integer that is closest to the number with ties going to even to " + userNumber + " Is: " + Math.rint(userNumber));
         // Used Math.round as it is the standard rounding method
-        System.out.printf("\nThe integer that is closest to the number to " + userNumber + " Is: " + Math.rint(userNumber));
-        // BONUS:
-        // Cast the number to an int and print the character it represents
+        System.out.println("The integer that is closest to the number to " + userNumber + " Is: " + Math.rint(userNumber));
+        // Casts number to int
+        int userInt = (int)(userNumber);
+        System.out.println("Your number as a character is... " + (char) (userInt)); // Cats the number to a character
         // Add 1 to that number and print the next character
-        // Format a summary table using formatted output
+        System.out.println("Your number as a character plus 1 is... " + (char) (userInt + 1));  // Casts the number to a character and adds 1
+        System.out.println("Your original decimal number as a integer is..." + userInt);
     }
 }
